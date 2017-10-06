@@ -2,18 +2,18 @@
 
 using namespace std;
 
-void power(int base, int exponent);
+int power(int base, int exponent);
 
 int main()
 {
-    power(2, 3);
-    power(2, 10);
-    power(2, 20);
+    cout<<power(2, 3)<<endl;
+    cout<<power(2, 10)<<endl;
+    cout<<power(2, 20)<<endl;
 
 	return 0;
 }
 //--
-void power(int base, int exponent)
+ int power(int base, int exponent)
 {
     int retVal = 1;
 
@@ -21,5 +21,5 @@ void power(int base, int exponent)
     {
         retVal = retVal * base;
     }
-    cout<<retVal<<endl;
+    return retVal;
 }
